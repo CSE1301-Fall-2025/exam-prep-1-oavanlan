@@ -34,3 +34,6 @@ public class Q17 {
 		System.out.println(6);
 	}
 }
+//3
+//4
+//6

@@ -29,6 +29,19 @@ public class Q06 {
 		System.out.println("How many characters?");
 		int length = in.nextInt();
 		in.close();
+		String[] password = new String[length];
+		for (int i = 0; i < length; i++) {
+			int characterIndex = (int)(Math.random()*(characters.length));
+			String randomCharacter = characters[characterIndex];
+			password[i] = randomCharacter;
+		}
+		System.out.print("Your password is: ");
+		for (String character : password) {
+			System.out.print(character);
+		}
+
+		//int specificCharacter = (int)(Math.random()*(characterIndex.length));
+
 		
 	}
 }

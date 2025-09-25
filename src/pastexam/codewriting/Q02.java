@@ -16,7 +16,24 @@ public class Q02 {
 	 */
 	
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
+		double area;
+		System.out.print("What is the width of the rectangle: ");
+		double width = scan.nextDouble();
+		System.out.print("What is the height of the rectangle: ");
+		double height = scan.nextDouble();
+		area = width*height;
+		System.out.println("The area of the rectangle is " + area + ".");
+		while (area != 0) {
+			System.out.print("What is the width of your next rectangle: ");
+			width = scan.nextDouble();
+			System.out.print("What is the height of your next rectangle: ");
+			height = scan.nextDouble();
+			area = width*height;
+			System.out.println("The area of the rectangle is " + area + ".");
+		}
+		System.out.println("All finished.");
+		scan.close();
 		
 	}
 }

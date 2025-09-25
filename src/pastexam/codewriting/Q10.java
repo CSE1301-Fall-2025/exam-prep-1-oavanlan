@@ -1,6 +1,6 @@
 package pastexam.codewriting;
 
-import java.util.Scanner;
+
 
 public class Q10 {
 
@@ -30,6 +30,20 @@ public class Q10 {
 		//and columns to make sure your solution
 		//works properly.
 		int[][] data = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} }; 
+		int sum = 0;
+		for (int row = 0; row < data.length; row++) {
+			for (int col = 0; col < data[0].length; col++) {
+				if (row == col) {
+					sum += data[row][col];
+				} 
+				if (row + col == (data.length - 1)) {
+					sum += data[row][col];
+				}
+			}
+		}
+		System.out.println("The sum of the diagonals is " + sum + ".");
+		
 		
 	}
 }
+

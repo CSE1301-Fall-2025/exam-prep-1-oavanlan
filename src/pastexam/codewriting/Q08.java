@@ -1,7 +1,5 @@
 package pastexam.codewriting;
 
-import java.util.Scanner;
-
 public class Q08 {
 
 	/*
@@ -33,6 +31,14 @@ public class Q08 {
 		//and columns to make sure your solution
 		//works properly.
 		int[][] data = { {1, 2, 3}, {4, 5, 6} }; 
+		for (int row = 0; row < data[0].length; row++) {
+			for (int col = 0; col < data.length; col++) {
+				System.out.print(data[col][row]);
+				
+			}
+			System.out.println();
+		}
 		
 	}
 }
+

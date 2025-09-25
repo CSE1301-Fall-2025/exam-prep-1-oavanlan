@@ -1,7 +1,5 @@
 package pastexam.codewriting;
 
-import java.util.Scanner;
-
 public class Q14 {
 
 	/*
@@ -28,6 +26,15 @@ public class Q14 {
 		//to make sure your solution
 		//works properly.
 		int[] data = {1, 2, 3}; 
+		int length = data.length*2;
+		int[] mirroredArray = new int[length];
+		for (int i = 0; i < data.length; i++) {
+			mirroredArray[i] = data[i];                      
+			mirroredArray[length - 1 - i] = data[i];     
+		}
+		for (int value : mirroredArray) {
+			System.out.print(value + " ");
+		}
 		
 	}
 }

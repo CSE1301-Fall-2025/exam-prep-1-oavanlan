@@ -17,3 +17,7 @@ public class Q36 {
 		}
 	}
 }
+//C
+//O
+//L
+//D
